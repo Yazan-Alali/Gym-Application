@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-brand-50: #eef9ff;
+  --color-brand-100: #d9f1ff;
+  --color-brand-200: #bce7ff;
+  --color-brand-300: #8ed7ff;
+  --color-brand-400: #59bdff;
+  --color-brand-500: #339dff;
+  --color-brand-600: #1a7af5;
+  --color-brand-700: #1363e1;
+  --color-brand-800: #1651b6;
+  --color-brand-900: #18468f;
+  --color-accent-400: #a78bfa;
+  --color-accent-500: #8b5cf6;
+  --color-accent-600: #7c3aed;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl;
+  }
+
+  .glass-dark {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-slate-700/50 shadow-xl;
+  }
+
+  .gradient-primary {
+    background: linear-gradient(135deg, #1a7af5 0%, #7c3aed 50%, #ec4899 100%);
+  }
+
+  .gradient-mesh {
+    background:
+      radial-gradient(at 0% 0%, rgba(26, 122, 245, 0.25) 0, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(124, 58, 237, 0.2) 0, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.15) 0, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(26, 122, 245, 0.15) 0, transparent 50%);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #1a7af5, #7c3aed, #ec4899);
+  }
+}

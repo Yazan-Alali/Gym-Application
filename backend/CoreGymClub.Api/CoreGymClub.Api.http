@@ -1,0 +1,6 @@
+@CoreGymClub.Api_HostAddress = http://localhost:5044
+
+GET {{CoreGymClub.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
