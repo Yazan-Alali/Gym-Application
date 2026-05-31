@@ -59,7 +59,7 @@ export default function AdminSessionsPage() {
     <div>
       <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold">Session management</h1>
+          <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100">Session management</h1>
           <p className="text-slate-600 dark:text-slate-400">Create and manage training schedules</p>
         </div>
         <Button onClick={openCreate}>
@@ -71,13 +71,13 @@ export default function AdminSessionsPage() {
         <table className="w-full min-w-[800px] text-left text-sm">
           <thead className="border-b border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800/50">
             <tr>
-              <th className="px-4 py-3 font-semibold">Title</th>
-              <th className="px-4 py-3 font-semibold">Category</th>
-              <th className="px-4 py-3 font-semibold">Trainer</th>
-              <th className="px-4 py-3 font-semibold">Start</th>
-              <th className="px-4 py-3 font-semibold">Spots</th>
-              <th className="px-4 py-3 font-semibold">Status</th>
-              <th className="px-4 py-3 font-semibold">Actions</th>
+              <th className="px-4 py-3 font-semibold text-slate-900 dark:text-slate-100">Title</th>
+              <th className="px-4 py-3 font-semibold text-slate-900 dark:text-slate-100">Category</th>
+              <th className="px-4 py-3 font-semibold text-slate-900 dark:text-slate-100">Trainer</th>
+              <th className="px-4 py-3 font-semibold text-slate-900 dark:text-slate-100">Start</th>
+              <th className="px-4 py-3 font-semibold text-slate-900 dark:text-slate-100">Spots</th>
+              <th className="px-4 py-3 font-semibold text-slate-900 dark:text-slate-100">Status</th>
+              <th className="px-4 py-3 font-semibold text-slate-900 dark:text-slate-100">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -90,14 +90,14 @@ export default function AdminSessionsPage() {
             )}
             {sessions.map((s) => (
               <tr key={s.id} className="border-b border-slate-100 dark:border-slate-800">
-                <td className="px-4 py-3 font-medium">{s.title}</td>
-                <td className="px-4 py-3">{s.category}</td>
-                <td className="px-4 py-3">{s.trainerName}</td>
-                <td className="px-4 py-3">{formatDateTime(s.startTime)}</td>
-                <td className="px-4 py-3">
+                <td className="px-4 py-3 font-medium text-slate-900 dark:text-slate-100">{s.title}</td>
+                <td className="px-4 py-3 text-slate-900 dark:text-slate-100 dark:text-slate-400">{s.category}</td>
+                <td className="px-4 py-3 text-slate-900 dark:text-slate-100 dark:text-slate-400">{s.trainerName}</td>
+                <td className="px-4 py-3 text-slate-900 dark:text-slate-100 dark:text-slate-400">{formatDateTime(s.startTime)}</td>
+                <td className="px-4 py-3 text-slate-900 dark:text-slate-100 dark:text-slate-400">
                   {s.availableSpots}/{s.capacity}
                 </td>
-                <td className="px-4 py-3">
+                <td className="px-4 py-3 text-slate-900 dark:text-slate-100 dark:text-slate-400">
                   <span
                     className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
                       s.isActive ? 'bg-emerald-500/10 text-emerald-600' : 'bg-slate-500/10 text-slate-500'
@@ -106,7 +106,7 @@ export default function AdminSessionsPage() {
                     {s.isActive ? 'Active' : 'Inactive'}
                   </span>
                 </td>
-                <td className="px-4 py-3">
+                <td className="px-4 py-3 text-slate-900 dark:text-slate-100 dark:text-slate-400">
                   <div className="flex gap-2">
                     <button
                       onClick={() => openEdit(s)}

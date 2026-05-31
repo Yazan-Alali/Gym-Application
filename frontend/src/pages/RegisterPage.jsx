@@ -46,7 +46,7 @@ export default function RegisterPage() {
           error={errors.email?.message}
           {...register('email', { required: 'Required' })}
         />
-        <Input label="Phone (optional)" {...register('phone')} />
+        <Input label="Phone " {...register('phone')} />
         <Input
           label="Password"
           type="password"

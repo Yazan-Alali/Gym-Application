@@ -5,7 +5,7 @@ const getInitialTheme = () => {
   if (stored) return stored;
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 };
-
+document.documentElement.classList.toggle('dark', getInitialTheme() === 'dark');
 const themeSlice = createSlice({
   name: 'theme',
   initialState: { mode: getInitialTheme() },

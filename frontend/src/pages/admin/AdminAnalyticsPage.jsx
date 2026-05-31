@@ -25,12 +25,12 @@ export default function AdminAnalyticsPage() {
 
   return (
     <div>
-      <h1 className="mb-2 text-3xl font-bold">Analytics</h1>
+      <h1 className="mb-2 text-3xl font-bold text-slate-900 dark:text-slate-100">Analytics</h1>
       <p className="mb-8 text-slate-600 dark:text-slate-400">Detailed performance insights</p>
 
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="rounded-2xl border border-slate-200 bg-white/80 p-6 dark:border-slate-800 dark:bg-slate-900/70">
-          <h3 className="mb-4 font-bold">Booking trend</h3>
+          <h3 className="mb-4 font-bold text-slate-900 dark:text-slate-100">Booking trend</h3>
           <ResponsiveContainer width="100%" height={300}>
             <AreaChart data={trends}>
               <defs>
@@ -49,7 +49,7 @@ export default function AdminAnalyticsPage() {
         </div>
 
         <div className="rounded-2xl border border-slate-200 bg-white/80 p-6 dark:border-slate-800 dark:bg-slate-900/70">
-          <h3 className="mb-4 font-bold">Sessions per category</h3>
+          <h3 className="mb-4 font-bold text-slate-900 dark:text-slate-100">Sessions per category</h3>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={categories}>
               <CartesianGrid strokeDasharray="3 3" stroke="#33415530" />

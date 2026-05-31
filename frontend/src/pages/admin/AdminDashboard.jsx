@@ -46,9 +46,12 @@ export default function AdminDashboard() {
 
   return (
     <div>
-      <h1 className="mb-2 text-3xl font-bold">Admin Dashboard</h1>
-      <p className="mb-8 text-slate-600 dark:text-slate-400">Core Gym Club AB — Overview & analytics</p>
-
+      <h1 className="mb-2 text-3xl font-bold text-slate-900 dark:text-slate-100">
+        Admin Dashboard
+      </h1>
+      <p className="mb-8 text-slate-600 dark:text-slate-400">
+        Core Gym Club AB — Overview & analytics
+      </p>
       <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard title="Total users" value={stats?.totalUsers} icon={FiUsers} color="brand" />
         <StatCard title="Members" value={stats?.totalMembers} icon={FiUsers} color="accent" />
@@ -64,7 +67,7 @@ export default function AdminDashboard() {
 
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="rounded-2xl border border-slate-200 bg-white/80 p-6 dark:border-slate-800 dark:bg-slate-900/70">
-          <h3 className="mb-4 font-bold">Bookings — Last 7 days</h3>
+          <h3 className="mb-4 font-bold text-slate-900 dark:text-slate-100">Bookings — Last 7 days</h3>
           <ResponsiveContainer width="100%" height={260}>
             <BarChart data={trends}>
               <CartesianGrid strokeDasharray="3 3" stroke="#33415530" />
@@ -83,7 +86,7 @@ export default function AdminDashboard() {
         </div>
 
         <div className="rounded-2xl border border-slate-200 bg-white/80 p-6 dark:border-slate-800 dark:bg-slate-900/70">
-          <h3 className="mb-4 font-bold">Bookings by category</h3>
+          <h3 className="mb-4 font-bold text-slate-900 dark:text-slate-100">Bookings by category</h3>
           <ResponsiveContainer width="100%" height={260}>
             <PieChart>
               <Pie
