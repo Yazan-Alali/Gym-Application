@@ -3,7 +3,6 @@
 > **Project:** Core Gym Club Booking System
 > **Methodology:** SCRUM
 > **Project Management Tool:** Jira
-> **Deadline:** 7 June 2026
 > **Developer:** Yazan Alali
 
 ---
@@ -397,7 +396,6 @@ The full product backlog as it existed in Jira before sprint planning. Issues we
 - Swagger API tested end-to-end against all endpoints
 - Manual testing against all 10 user stories
 - Agile documentation finalised
-- Project submitted before deadline
 
 **Deliverable:** Tested, documented, submitted project ✅
 
@@ -502,7 +500,7 @@ Self-assessment against teacher requirements using Jira as the project managemen
 | 9 | Daily logbook / progression journal          | ✅ Satisfied      | Section 11 — daily log with Jira issue transitions for all 4 weeks   |
 | 10| Evidence of Agile practices                  | ✅ Satisfied      | Jira board screenshots, epics, sprints, feature branches, backlog    |
 
-**Agile Compliance Score: 100 / 100**
+**Agile Compliance Summary**
 
 The agile documentation shows how Jira was used as the main project management tool during the project. The work was divided into SCRUM sprints, and the user stories were connected to the main features of the booking system.
 
@@ -510,4 +508,4 @@ The documentation includes Jira board screenshots, epics, sprint planning, featu
 
 ---
 
-*Document generated: June 2026 — Core Gym Club Booking System*
+*Core Gym Club Booking System*
