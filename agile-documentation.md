@@ -4,7 +4,7 @@
 > **Methodology:** SCRUM
 > **Project Management Tool:** Jira
 > **Deadline:** 7 June 2026
-> **Developer:** [Your Name]
+> **Developer:** Yazan Alali
 
 ---
 
@@ -504,7 +504,9 @@ Self-assessment against teacher requirements using Jira as the project managemen
 
 **Agile Compliance Score: 100 / 100**
 
-**Final Examiner Verdict:** All 10 teacher requirements are satisfied. Jira was used as the primary project management tool throughout the project lifecycle. Two SCRUM sprints were completed within the required 14-day window. All 10 user stories (CGCB-1 to CGCB-10) were delivered as planned with zero carryover. Jira board evidence is provided via three screenshots. A daily logbook with Jira issue transitions is maintained for all four weeks. Feature branches are linked to Jira issue keys. Planned vs completed story points match 100%.
+The agile documentation shows how Jira was used as the main project management tool during the project. The work was divided into SCRUM sprints, and the user stories were connected to the main features of the booking system.
+
+The documentation includes Jira board screenshots, epics, sprint planning, feature branches, backlog structure and a daily logbook. The project also includes manual testing and API testing with Swagger.
 
 ---
 
