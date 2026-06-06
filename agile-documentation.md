@@ -302,25 +302,23 @@ Sprints were created and managed directly in Jira under the project board. Each 
 
 The following screenshots are taken directly from the Jira project board, showing backlog, sprint progress, and completed issues.
 
-### Screenshot 1 — Jira Backlog / Board Overview
+### Jira Backlog / Board Overview
 
-![Jira Board — Backlog and Sprint Overview](../frontend/public/ref%20(1).jpeg)
+
 
 *Jira board showing all issues in the backlog and both sprints. Issues are visible with their IDs (CGCB-1 to CGCB-28), epic links, story points, and current status columns: Backlog → To Do → In Progress → Testing → Done.*
 
 ---
 
-### Screenshot 2 — Sprint 1 In Progress
+###  Sprint 1 In Progress
 
-![Jira Board — Sprint 1 Progress](../frontend/public/ref%20(2).jpeg)
 
 *Jira Scrum board during Sprint 1 (25/5–29/5). Issues CGCB-11 to CGCB-18 moving through the workflow. Authentication and session listing tasks visible in Done column by end of sprint.*
 
 ---
 
-### Screenshot 3 — Sprint 2 Completed
+### Sprint 2 Completed
 
-![Jira Board — Sprint 2 Complete](../frontend/public/ref%20(3).jpeg)
 
 *Jira board at the close of Sprint 2 (1/6–5/6). All 10 issues (CGCB-19 to CGCB-28) moved to Done. Sprint was formally closed in Jira confirming full delivery of all user stories.*
 
